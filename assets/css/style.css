@@ -278,15 +278,21 @@ footer {
 @media screen and (min-width: 1200px) {
   header {
     margin-inline: 35rem;
+    display: flex;
+    vertical-align: middle;
   }
   header div {
-    width: auto;
+    vertical-align: bottom;
+    text-align: left;
+    width: 100%;
     display: inline-block;
   }
   header div div {
-    display: inline-block;
+    width: 80%;
+    display: inline-flex;
   }
   header div p {
+    margin: 0;
     padding-left: 0.5rem;
   }
   header div img {
