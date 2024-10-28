@@ -277,7 +277,7 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   header {
-    margin-inline: 15rem;
+    margin-inline: 35rem;
   }
   header div {
     width: auto;
@@ -310,13 +310,13 @@ footer {
     border: #00a0c6, solid, 4px;
   }
   .logo {
-    height: auto;
+    box-sizing: content-box;
 
     display: inline-block;
     border: red, solid, 2px;
   }
   main {
-    margin-inline: 15rem;
+    margin-inline: 35rem;
     font-size: x-large;
   }
 
@@ -328,21 +328,25 @@ footer {
     width: 66.666%;
   }
   .interactive {
-    width: 40%;
-    display: inline-block;
+    width: 100%;
+    display: flex;
   }
-  .interactive iframe {
-    display: block;
+  .interactive iframe,
+  .interactive section {
+    width: 50%;
   }
   .interactive section {
     padding: 0;
-    display: block;
   }
   aside h2 {
+    display: inline;
     font-size: 5rem;
   }
   footer {
-    margin-inline: 15rem;
+    margin-inline: 35rem;
     font-size: x-large;
+  }
+  aside {
+    display: flex;
   }
 }
